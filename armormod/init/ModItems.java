@@ -86,7 +86,7 @@ public class ModItems
 	
 	// =======   Armor  =======
 			// Heavy Base
-	@SideOnly(Side.CLIENT)
+	
 	public static final Item HEAVY_HELMET = new HeavyHelmet("heavy_helmet", ARMOR_HEAVY, 1, EntityEquipmentSlot.HEAD);
 	public static final Item HEAVY_VEST = new HeavyVest("heavy_vest", ARMOR_HEAVY, 1, EntityEquipmentSlot.CHEST);
 	public static final Item HEAVY_PANTS = new HeavyPants("heavy_pants", ARMOR_MEDIUM, 2, EntityEquipmentSlot.LEGS);		
