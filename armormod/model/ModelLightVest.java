@@ -1,0 +1,315 @@
+
+package com.guywith2forks.armormod.model;
+
+import net.minecraft.client.model.ModelBiped;
+import net.minecraft.client.model.ModelRenderer;
+import net.minecraft.entity.Entity;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
+
+@SideOnly(Side.CLIENT)
+public class ModelLightVest extends ModelBiped
+{
+  //fields
+//    ModelRenderer Front_Plate;
+//    ModelRenderer L_Side_Plate;
+//    ModelRenderer R_Side_Plate;
+//    ModelRenderer FR_Strap;
+//    ModelRenderer FL_Strap;
+//    ModelRenderer L_Shoulder;
+//    ModelRenderer R_Shoulder;
+//    ModelRenderer Back_Plate;
+//    ModelRenderer Bladder;
+//    ModelRenderer Back_Bar;
+//    ModelRenderer L_Back_Top_Strap;
+//    ModelRenderer R_Back_Top_Strap;
+//    ModelRenderer Mag_1;
+//    ModelRenderer Mag_2;
+//    ModelRenderer Mag_3;
+//    ModelRenderer Front_Retent_Strap;
+//    ModelRenderer ATAK_Plate;
+	ModelRenderer Main_Plate;
+    ModelRenderer R_Side_Plate;
+    ModelRenderer L_Side_Plate;
+    ModelRenderer Back_Plate;
+    ModelRenderer R_Back_Strap;
+    ModelRenderer L_Back_Strap;
+    ModelRenderer L_Should_Strap_Back;
+    ModelRenderer R_Should_Strap_Back;
+    ModelRenderer Bladder;
+    ModelRenderer Radio;
+    ModelRenderer Ant;
+    ModelRenderer R_Should_Strap;
+    ModelRenderer L_Should_Strap;
+    ModelRenderer L_Front_Strap;
+    ModelRenderer R_Front_Strap;
+    ModelRenderer Mag_1;
+    ModelRenderer Mag_2;
+    ModelRenderer Mag_3;
+    ModelRenderer Chest_Strap;
+    
+  public ModelLightVest(float scale)
+  {
+	  super(scale, 0, 128, 128);
+    textureWidth = 128;
+    textureHeight = 128;
+    
+//      Front_Plate = new ModelRenderer(this, 30, 32);
+//      Front_Plate.addBox(-3.5F, 7F, -2.5F, 7, 3, 1);
+//      Front_Plate.setRotationPoint(0F, 0F, 0F);
+//      Front_Plate.setTextureSize(256, 256);
+//      Front_Plate.mirror = true;
+//      setRotation(Front_Plate, 0F, 0F, 0F);
+//      L_Side_Plate = new ModelRenderer(this, 18, 30);
+//      L_Side_Plate.addBox(3.5F, 7F, -2.5F, 1, 2, 5);
+//      L_Side_Plate.setRotationPoint(0F, 0F, 0F);
+//      L_Side_Plate.setTextureSize(256, 256);
+//      L_Side_Plate.mirror = true;
+//      setRotation(L_Side_Plate, 0F, 0F, 0F);
+//      R_Side_Plate = new ModelRenderer(this, 46, 30);
+//      R_Side_Plate.addBox(-4.5F, 7F, -2.5F, 1, 2, 5);
+//      R_Side_Plate.setRotationPoint(0F, 0F, 0F);
+//      R_Side_Plate.setTextureSize(256, 256);
+//      R_Side_Plate.mirror = true;
+//      setRotation(R_Side_Plate, 0F, 0F, 0F);
+//      FR_Strap = new ModelRenderer(this, 42, 24);
+//      FR_Strap.addBox(-4F, 0F, -2.5F, 1, 7, 1);
+//      FR_Strap.setRotationPoint(0F, 0F, 0F);
+//      FR_Strap.setTextureSize(256, 256);
+//      FR_Strap.mirror = true;
+//      setRotation(FR_Strap, 0F, 0F, 0F);
+//      FL_Strap = new ModelRenderer(this, 30, 24);
+//      FL_Strap.addBox(3F, 0F, -2.5F, 1, 7, 1);
+//      FL_Strap.setRotationPoint(0F, 0F, 0F);
+//      FL_Strap.setTextureSize(256, 256);
+//      FL_Strap.mirror = true;
+//      setRotation(FL_Strap, 0F, 0F, 0F);
+//      L_Shoulder = new ModelRenderer(this, 20, 25);
+//      L_Shoulder.addBox(3F, -0.2F, -2F, 1, 1, 4);
+//      L_Shoulder.setRotationPoint(0F, 0F, 0F);
+//      L_Shoulder.setTextureSize(256, 256);
+//      L_Shoulder.mirror = true;
+//      setRotation(L_Shoulder, 0F, 0F, 0F);
+//      R_Shoulder = new ModelRenderer(this, 46, 25);
+//      R_Shoulder.addBox(-4F, -0.2F, -2F, 1, 1, 4);
+//      R_Shoulder.setRotationPoint(0F, 0F, 0F);
+//      R_Shoulder.setTextureSize(256, 256);
+//      R_Shoulder.mirror = true;
+//      setRotation(R_Shoulder, 0F, 0F, 0F);
+//      Back_Plate = new ModelRenderer(this, 33, 46);
+//      Back_Plate.addBox(-2.5F, 1F, 2.1F, 5, 7, 0);
+//      Back_Plate.setRotationPoint(0F, 0F, 0F);
+//      Back_Plate.setTextureSize(256, 256);
+//      Back_Plate.mirror = true;
+//      setRotation(Back_Plate, 0F, 0F, 0F);
+//      Bladder = new ModelRenderer(this, 34, 53);
+//      Bladder.addBox(-1.5F, 1F, 2.1F, 3, 6, 1);
+//      Bladder.setRotationPoint(0F, 0F, 0F);
+//      Bladder.setTextureSize(256, 256);
+//      Bladder.mirror = true;
+//      setRotation(Bladder, 0F, 0F, 0F);
+//      Back_Bar = new ModelRenderer(this, 30, 60);
+//      Back_Bar.addBox(-3.5F, 8F, 1.7F, 7, 1, 1);
+//      Back_Bar.setRotationPoint(0F, 0F, 0F);
+//      Back_Bar.setTextureSize(256, 256);
+//      Back_Bar.mirror = true;
+//      setRotation(Back_Bar, 0F, 0F, 0F);
+//      L_Back_Top_Strap = new ModelRenderer(this, 28, 55);
+//      L_Back_Top_Strap.addBox(0.8F, 0F, 2.9F, 3, 1, 0);
+//      L_Back_Top_Strap.setRotationPoint(0F, 0F, 0F);
+//      L_Back_Top_Strap.setTextureSize(256, 256);
+//      L_Back_Top_Strap.mirror = true;
+//      setRotation(L_Back_Top_Strap, 0F, 0.2094395F, 0F);
+//      R_Back_Top_Strap = new ModelRenderer(this, 42, 55);
+//      R_Back_Top_Strap.addBox(-3.8F, 0F, 2.9F, 3, 1, 0);
+//      R_Back_Top_Strap.setRotationPoint(0F, 0F, 0F);
+//      R_Back_Top_Strap.setTextureSize(256, 256);
+//      R_Back_Top_Strap.mirror = true;
+//      setRotation(R_Back_Top_Strap, 0F, -0.2094395F, 0F);
+//      Mag_1 = new ModelRenderer(this, 30, 36);
+//      Mag_1.addBox(-1F, 6F, -3F, 2, 3, 1);
+//      Mag_1.setRotationPoint(0F, 0F, 0F);
+//      Mag_1.setTextureSize(256, 256);
+//      Mag_1.mirror = true;
+//      setRotation(Mag_1, 0F, 0F, 0.296706F);
+//      Mag_2 = new ModelRenderer(this, 36, 36);
+//      Mag_2.addBox(1.2F, 5.5F, -3F, 2, 3, 1);
+//      Mag_2.setRotationPoint(0F, 0F, 0F);
+//      Mag_2.setTextureSize(256, 256);
+//      Mag_2.mirror = true;
+//      setRotation(Mag_2, 0F, 0F, 0.296706F);
+//      Mag_3 = new ModelRenderer(this, 42, 36);
+//      Mag_3.addBox(2F, 6F, -3F, 1, 3, 1);
+//      Mag_3.setRotationPoint(0F, 0F, 0F);
+//      Mag_3.setTextureSize(256, 256);
+//      Mag_3.mirror = true;
+//      setRotation(Mag_3, 0F, 0F, 0F);
+//      Front_Retent_Strap = new ModelRenderer(this, 31, 23);
+//      Front_Retent_Strap.addBox(-3.5F, 2F, -2.2F, 7, 1, 0);
+//      Front_Retent_Strap.setRotationPoint(0F, 0F, 0F);
+//      Front_Retent_Strap.setTextureSize(256, 256);
+//      Front_Retent_Strap.mirror = true;
+//      setRotation(Front_Retent_Strap, 0F, 0F, 0F);
+//      ATAK_Plate = new ModelRenderer(this, 34, 27);
+//      ATAK_Plate.addBox(-1.5F, 1F, -2F, 3, 2, 1);
+//      ATAK_Plate.setRotationPoint(0F, 0F, 0F);
+//      ATAK_Plate.setTextureSize(256, 256);
+//      ATAK_Plate.mirror = true;
+//      setRotation(ATAK_Plate, -0.1745329F, 0F, 0F);
+    Main_Plate = new ModelRenderer(this, 58, 59);
+    Main_Plate.addBox(-3.5F, 7F, -2.5F, 7, 2, 1);
+    Main_Plate.setRotationPoint(0F, 0F, 0F);
+    Main_Plate.setTextureSize(128, 128);
+    Main_Plate.mirror = true;
+    setRotation(Main_Plate, 0F, 0F, 0F);
+    R_Side_Plate = new ModelRenderer(this, 74, 56);
+    R_Side_Plate.addBox(-4.5F, 7F, -2.5F, 1, 1, 5);
+    R_Side_Plate.setRotationPoint(0F, 0F, 0F);
+    R_Side_Plate.setTextureSize(128, 128);
+    R_Side_Plate.mirror = true;
+    setRotation(R_Side_Plate, 0F, 0F, 0F);
+    L_Side_Plate = new ModelRenderer(this, 46, 56);
+    L_Side_Plate.addBox(3.5F, 7F, -2.5F, 1, 1, 5);
+    L_Side_Plate.setRotationPoint(0F, 0F, 0F);
+    L_Side_Plate.setTextureSize(128, 128);
+    L_Side_Plate.mirror = true;
+    setRotation(L_Side_Plate, 0F, 0F, 0F);
+    Back_Plate = new ModelRenderer(this, 60, 63);
+    Back_Plate.addBox(-2.5F, 1F, 1.5F, 5, 7, 1);
+    Back_Plate.setRotationPoint(0F, 0F, 0F);
+    Back_Plate.setTextureSize(128, 128);
+    Back_Plate.mirror = true;
+    setRotation(Back_Plate, 0F, 0F, 0F);
+    R_Back_Strap = new ModelRenderer(this, 72, 69);
+    R_Back_Strap.addBox(-3.5F, 7F, 2.5F, 1, 1, 0);
+    R_Back_Strap.setRotationPoint(0F, 0F, 0F);
+    R_Back_Strap.setTextureSize(128, 128);
+    R_Back_Strap.mirror = true;
+    setRotation(R_Back_Strap, 0F, 0F, 0F);
+    L_Back_Strap = new ModelRenderer(this, 58, 69);
+    L_Back_Strap.addBox(2.5F, 7F, 2.5F, 1, 1, 0);
+    L_Back_Strap.setRotationPoint(0F, 0F, 0F);
+    L_Back_Strap.setTextureSize(128, 128);
+    L_Back_Strap.mirror = true;
+    setRotation(L_Back_Strap, 0F, 0F, 0F);
+    L_Should_Strap_Back = new ModelRenderer(this, 56, 63);
+    L_Should_Strap_Back.addBox(2.5F, -0.5F, 1.5F, 1, 3, 1);
+    L_Should_Strap_Back.setRotationPoint(0F, 0F, 0F);
+    L_Should_Strap_Back.setTextureSize(128, 128);
+    L_Should_Strap_Back.mirror = true;
+    setRotation(L_Should_Strap_Back, 0F, 0F, 0F);
+    R_Should_Strap_Back = new ModelRenderer(this, 72, 63);
+    R_Should_Strap_Back.addBox(-3.5F, -0.5F, 1.5F, 1, 3, 1);
+    R_Should_Strap_Back.setRotationPoint(0F, 0F, 0F);
+    R_Should_Strap_Back.setTextureSize(128, 128);
+    R_Should_Strap_Back.mirror = true;
+    setRotation(R_Should_Strap_Back, 0F, 0F, 0F);
+    Bladder = new ModelRenderer(this, 62, 71);
+    Bladder.addBox(-1.5F, 1.3F, 2F, 3, 5, 1);
+    Bladder.setRotationPoint(0F, 0F, 0F);
+    Bladder.setTextureSize(128, 128);
+    Bladder.mirror = true;
+    setRotation(Bladder, 0F, 0F, 0F);
+    Radio = new ModelRenderer(this, 77, 72);
+    Radio.addBox(-4F, 1F, 2.3F, 2, 4, 1);
+    Radio.setRotationPoint(0F, 0F, 0F);
+    Radio.setTextureSize(128, 128);
+    Radio.mirror = true;
+    setRotation(Radio, 0F, 0F, 0F);
+    Ant = new ModelRenderer(this, 83, 66);
+    Ant.addBox(-4.6F, -4.5F, 3.3F, 1, 6, 0);
+    Ant.setRotationPoint(0F, 0F, 0F);
+    Ant.setTextureSize(128, 128);
+    Ant.mirror = true;
+    setRotation(Ant, 0F, 0F, -0.2443461F);
+    R_Should_Strap = new ModelRenderer(this, 86, 60);
+    R_Should_Strap.addBox(-3.5F, -0.2F, -2.5F, 1, 1, 5);
+    R_Should_Strap.setRotationPoint(0F, 0F, 0F);
+    R_Should_Strap.setTextureSize(128, 128);
+    R_Should_Strap.mirror = true;
+    setRotation(R_Should_Strap, 0F, 0F, 0F);
+    L_Should_Strap = new ModelRenderer(this, 34, 60);
+    L_Should_Strap.addBox(2.5F, -0.2F, -2.5F, 1, 1, 5);
+    L_Should_Strap.setRotationPoint(0F, 0F, 0F);
+    L_Should_Strap.setTextureSize(128, 128);
+    L_Should_Strap.mirror = true;
+    setRotation(L_Should_Strap, 0F, 0F, 0F);
+    L_Front_Strap = new ModelRenderer(this, 58, 51);
+    L_Front_Strap.addBox(2.5F, 0F, -2.6F, 1, 7, 0);
+    L_Front_Strap.setRotationPoint(0F, 0F, 0F);
+    L_Front_Strap.setTextureSize(128, 128);
+    L_Front_Strap.mirror = true;
+    setRotation(L_Front_Strap, 0F, 0F, 0F);
+    R_Front_Strap = new ModelRenderer(this, 72, 51);
+    R_Front_Strap.addBox(-3.5F, 0F, -2.6F, 1, 7, 0);
+    R_Front_Strap.setRotationPoint(0F, 0F, 0F);
+    R_Front_Strap.setTextureSize(128, 128);
+    R_Front_Strap.mirror = true;
+    setRotation(R_Front_Strap, 0F, 0F, 0F);
+    Mag_1 = new ModelRenderer(this, 60, 54);
+    Mag_1.addBox(-1F, 6F, -3.5F, 2, 3, 1);
+    Mag_1.setRotationPoint(0F, 0F, 0F);
+    Mag_1.setTextureSize(128, 128);
+    Mag_1.mirror = true;
+    setRotation(Mag_1, 0F, 0F, 0.2268928F);
+    Mag_2 = new ModelRenderer(this, 66, 54);
+    Mag_2.addBox(1.2F, 5.8F, -3.5F, 2, 3, 1);
+    Mag_2.setRotationPoint(0F, 0F, 0F);
+    Mag_2.setTextureSize(128, 128);
+    Mag_2.mirror = true;
+    setRotation(Mag_2, 0F, 0F, 0.2268928F);
+    Mag_3 = new ModelRenderer(this, 63, 50);
+    Mag_3.addBox(3.6F, 5F, -3.5F, 1, 3, 1);
+    Mag_3.setRotationPoint(0F, 0F, 0F);
+    Mag_3.setTextureSize(128, 128);
+    Mag_3.mirror = true;
+    setRotation(Mag_3, 0F, 0F, 0.2268928F);
+    Chest_Strap = new ModelRenderer(this, 60, 48);
+    Chest_Strap.addBox(-2.5F, 2F, -2.5F, 5, 1, 0);
+    Chest_Strap.setRotationPoint(0F, 0F, 0F);
+    Chest_Strap.setTextureSize(128, 128);
+    Chest_Strap.mirror = true;
+    setRotation(Chest_Strap, 0F, 0F, 0F);
+      
+      bipedBody.addChild(Main_Plate);
+      bipedBody.addChild(R_Side_Plate);
+      bipedBody.addChild(L_Side_Plate);
+      bipedBody.addChild(Back_Plate);
+      bipedBody.addChild(R_Back_Strap);
+      bipedBody.addChild(L_Back_Strap);
+      bipedBody.addChild(L_Should_Strap_Back);
+      bipedBody.addChild(R_Should_Strap_Back);
+      bipedBody.addChild(Bladder);
+      bipedBody.addChild(Radio);
+      bipedBody.addChild(Ant);
+      bipedBody.addChild(R_Should_Strap);
+      bipedBody.addChild(L_Should_Strap);
+      bipedBody.addChild(L_Front_Strap);
+      bipedBody.addChild(R_Front_Strap);
+      bipedBody.addChild(Mag_1);
+      bipedBody.addChild(Mag_2);
+      bipedBody.addChild(Mag_3);
+      bipedBody.addChild(Chest_Strap);
+      
+      
+      
+      
+  }
+  
+  public void render(Entity entity, float f, float f1, float f2, float f3, float f4, float f5)
+  {
+    super.render(entity, f, f1, f2, f3, f4, f5);
+    setRotationAngles(f, f1, f2, f3, f4, f5, entity);
+    
+  }
+  
+  private void setRotation(ModelRenderer model, float x, float y, float z)
+  {
+    model.rotateAngleX = x;
+    model.rotateAngleY = y;
+    model.rotateAngleZ = z;
+  }
+  
+
+
+}
