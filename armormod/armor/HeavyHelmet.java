@@ -29,11 +29,8 @@ public class HeavyHelmet extends ItemArmor implements IHasModel
 		
 		ModItems.ITEMS.add(this);
 	}
-
-	
 	@Override
-	
-	public ModelHeavyHelmet getArmorModel(EntityLivingBase entityLiving, ItemStack itemStack, EntityEquipmentSlot armorSlot, ModelBiped _default)
+	public ModelBiped getArmorModel(EntityLivingBase entityLiving, ItemStack itemStack, EntityEquipmentSlot armorSlot, ModelBiped _default)
 		{
 		if(!itemStack.isEmpty()) {
 			if(itemStack.getItem() instanceof ItemArmor) {
@@ -58,15 +55,7 @@ public class HeavyHelmet extends ItemArmor implements IHasModel
 
 		return null;
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
 	@Override
 	public void registerModels() 
 	{
